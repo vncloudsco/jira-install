@@ -17,7 +17,7 @@ DESTINATION=/usr/local/bin/docker-compose
 sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o $DESTINATION
 sudo chmod 755 $DESTINATION
 
-git clone https://github.com/vncloudsco/jira-install
+git clone -b 9.7.0 https://github.com/vncloudsco/jira-install
 cd jira-install
 docker-compose -f docker-compose-build.yaml build
 docker-compose -f docker-compose-build.yaml up -d
