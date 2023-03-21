@@ -2,7 +2,7 @@ FROM openjdk:8-stretch
 
 LABEL maintainer="vouu <contact@manhtuong.net>" version="9.6.0"
 
-ARG JIRA_VERSION=9.6.0
+ARG JIRA_VERSION=9.7.0
 # Production: jira-software jira-core
 ARG JIRA_PRODUCT=jira-software
 ARG AGENT_VERSION=1
