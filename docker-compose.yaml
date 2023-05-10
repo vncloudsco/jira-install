@@ -1,10 +1,7 @@
 version: '3.4'
 services:
   jira:
-    build:
-      context: ./Jira
-      dockerfile: Dockerfile
-    image: vouu/jira:9.8.0
+    image: vouu/jira:build-05-10-2023
     container_name: jira-srv
     environment:
       - TZ='Asia/Ho_Chi_Minh'
