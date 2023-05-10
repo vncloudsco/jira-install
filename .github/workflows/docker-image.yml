@@ -21,6 +21,6 @@ jobs:
       run:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag vouu/jira:$(date +%s)
+      run: docker build -t vouu/jira:$(date +%s) .
     - name: Docker Push 
-      run: docker push ${{secrets.DOCKER_USER}}/jira
+      run: docker push vouu/jira:$(date +%s)
