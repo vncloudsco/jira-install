@@ -24,7 +24,7 @@ services:
     networks:
       - network-bridge
   jiradb:
-    image: postgres:13
+    image: postgres:13-alpine
     container_name: postgresql-jira
     env_file:
       - database-jira.env
